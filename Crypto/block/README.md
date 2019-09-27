@@ -10,6 +10,8 @@ It will take two argument as input : the file we want to encrypt and the key use
 
 The program will split the text in blocks of the same size as the key and encrypt each block with a permutation generated from the key.
 
+The file poem_file.txt is provided as an example.
+
 ## Usage
 
 ```python
