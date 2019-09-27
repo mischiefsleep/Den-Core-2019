@@ -6,7 +6,7 @@ This folder is about block cipher encryption methods.
 
 This program implements a block cipher encryption method based on permutations.
 
-It will take two argument as input : the file we want to encrypt and the key used for encryption. The file is usually a .txt file and the key is usually a string.
+It will take two arguments as input : the file we want to encrypt and the key used for encryption. The file is usually a .txt file and the key is usually a string.
 
 The program will split the text in blocks of the same size as the key and encrypt each block with a permutation generated from the key.
 
