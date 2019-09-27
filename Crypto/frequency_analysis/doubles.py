@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 
-# william
+# Guilhem Mizrahi 09/2019
+
 # This program will take a text file as input and a string and will return the number of times this string appeared in the file.
 # This program was useful in assessing if common words like "the", "that", "with" were present in our decrypted text (the absence of these words suggesting an incomplete decryption)
 
