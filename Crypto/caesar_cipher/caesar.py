@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 
-# Guilhem Mizrahi
+# Guilhem Mizrahi 08/2019
 
 # This program will perform a Caesar cypher on a text file and print the encypted text to a new text file
 # Two user inputs are expected : a file name and an integer (the offset for the cypher)
