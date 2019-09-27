@@ -12,7 +12,7 @@ The file plain_text.txt is provided as an example.
 
 ## Usage
 
-```python
+```bash
 python3 caesar.py plain_text.txt 3
 ```
 
