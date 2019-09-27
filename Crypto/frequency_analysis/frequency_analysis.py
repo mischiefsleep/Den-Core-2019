@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 
-# william
+# Guilhem Mizrahi 09/2019
+
 # This program takes a text file as argument. It will perform a frequency analysis of the letters of the text, create a permutation table mapping the result of the frequency analysis to the frequencies of letters in the english language. This permutation table will be used to try and decrypt the text file provided using a permutation cypher.
 # The accuracy of the frenquency analysis method is not enough to perfectly decrypt the text file. In order the completely decrypt, some manual changes have been made to the table. This lead to the hardcoded table that actually matches the permutation table used for encryption.
 # The result of the decryption will be written to a file called "decrypted_<file_name>.txt"
