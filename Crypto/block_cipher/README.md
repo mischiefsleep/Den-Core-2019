@@ -14,7 +14,7 @@ The file poem_file.txt is provided as an example.
 
 ## Usage
 
-```python
+```bash
 python3 block_cipher.py poem_file.txt STUDENT
 ```
 
