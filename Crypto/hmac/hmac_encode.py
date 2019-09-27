@@ -1,5 +1,6 @@
 #!/usr/bin/python3
-# William
+
+# Guilhem Mizrahi 09/2019
 
 # This program takes a text file with the formating <sentence>:<hash> and a .key file that contains the key used to compute the hashes
 # It will compute the hash of the sentence and compare it to the associateed hash in the file
