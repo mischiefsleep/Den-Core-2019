@@ -6,7 +6,7 @@ This folder is about the Caesar cipher encryption methods.
 
 This program implements a caesar cipher encryption method.
 
-It will take two argument as input : the file we want to encrypt and the key use for encryption. The file is usually a .txt file and the key is usually a integer representing the offset for the cipher.
+It will take two argument as input : the file we want to encrypt and the key used for encryption. The file is usually a .txt file and the key is usually a integer representing the offset for the cipher.
 
 The file plain_text.txt is provided as an example.
 
