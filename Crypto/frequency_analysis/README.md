@@ -25,8 +25,6 @@ This program will search for the number of occurences of a specific string in a 
 ## More information
 
 There are many comments inside the code, don't hesitate to look at it.
-If you want to know more about the way the permutations are generated or the meaning of the rotated encryption you can send an email at guilhem.mizrahi<at>secureset.academy.
-
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
