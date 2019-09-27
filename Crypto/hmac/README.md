@@ -15,7 +15,7 @@ The files sentences.txt and key.key are provided as an example. The file not_mat
 
 ## Usage
 
-```python
+```bash
 python3 hmac_encode.py sentences.txt key.key
 ```
 
