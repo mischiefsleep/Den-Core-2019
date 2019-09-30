@@ -7,6 +7,26 @@ dir=$( dirname "${BASH_SOURCE[0]}" );
 echo "Starting installation.";
 echo "";
 
+if [ -f `which awk` ]
+then
+    echo "Copying awk.";
+    cp `which awk` /bin;
+else
+    echo "Installing awk.";
+    apt install awk;
+fi
+
+echo "";
+
+if [ -f `which mail` ]
+then
+    echo "Copying mail.";
+    cp `which mail` /bin;
+else
+    echo "Installing mailutils.";
+    apt install mailutils;
+fi
+
 echo "Setting up the mail account from which to send emails";
 echo "If you have a gmail address, you may have to enable a security setting on your account to allow third party apps to access it.";
 echo "You can also create an application specific password if your provider allows it";
@@ -40,26 +60,6 @@ echo "Your server for SSH Sentry has been correctly configured." | /bin/mail -s 
 read -p "Who do you want to send the alerts to ? (provide an email address)" recipient;
 
 sed -i "s/EMAIL@ADDRESS.COM/$recipient/" $dir/ssh_scan.sh;
-
-if [ -f `which awk` ]
-then
-    echo "Copying awk.";
-    cp `which awk` /bin;
-else
-    echo "Installing awk.";
-    apt install awk;
-fi
-
-echo "";
-
-if [ -f `which mail` ]
-then
-    echo "Copying mail.";
-    cp `which mail` /bin;
-else
-    echo "Installing mailutils.";
-    apt install mailutils;
-fi
 
 echo "";
 
