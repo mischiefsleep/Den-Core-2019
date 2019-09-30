@@ -7,23 +7,27 @@ dir=$( dirname "${BASH_SOURCE[0]}" );
 echo "Starting installation.";
 echo "";
 
-if [ -f "/bin/awk" ]
-then
-    echo "awk is installed.";
-else
-    echo "Installing awk.";
-    apt install mawk;
-fi
+#if [ -f "/bin/awk" ]
+#then
+#    echo "awk is installed.";
+#else
+#    echo "Installing awk.";
+#    apt install mawk;
+#fi
 
-echo "";
+#echo "";
 
-if [ -f `which ssmtp` ]
-then
-    echo "ssmtp is installed.";
-else
-    echo "Installing mailutils.";
-    apt install ssmtp;
-fi
+#if [ -f `which ssmtp` ]
+#then
+#    echo "ssmtp is installed.";
+#else
+#    echo "Installing mailutils.";
+#    apt install ssmtp;
+#fi
+
+apt install mawk;
+apt install ssmtp;
+apt install mailutils;
 
 echo "Setting up the mail account from which to send emails";
 echo "If you have a gmail address, you may have to enable a security setting on your account to allow third party apps to access it.";
