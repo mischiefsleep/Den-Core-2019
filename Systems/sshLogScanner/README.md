@@ -13,9 +13,9 @@ This will perform the following operations :
 
 In the end the structure looks like the following\
 /var/log/ssh-log/\
-    ├── ssh.scan\
-    ├── ssh.scan1569596461\
-    ├── ssh.scan1569600061\
-    ├── ssh.scan1569603661\
-    └── ssh_scan.sh\
+&nbsp;&nbsp;&nbsp;&nbsp;├── ssh.scan\
+&nbsp;&nbsp;&nbsp;&nbsp;├── ssh.scan1569596461\
+&nbsp;&nbsp;&nbsp;&nbsp;├── ssh.scan1569600061\
+&nbsp;&nbsp;&nbsp;&nbsp;├── ssh.scan1569603661\
+&nbsp;&nbsp;&nbsp;&nbsp;└── ssh_scan.sh\
 
