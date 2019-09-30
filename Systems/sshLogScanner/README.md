@@ -19,3 +19,4 @@ In the end the structure looks like the following\
 &nbsp;&nbsp;&nbsp;&nbsp;├── ssh.scan1569603661\
 &nbsp;&nbsp;&nbsp;&nbsp;└── ssh_scan.sh\
 
+Where ssh_scan.sh is the script, ssh.scan is the current log of failures (the ones that occured during the last hour) and the ssh.scan1569.... are archives of the logs when an alert was sent, the number being the time of the beginning of said hour in seconds.
