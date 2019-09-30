@@ -2,11 +2,20 @@ To configure the program, run the following command :
 sudo ./make-config.sh
 And follow the instructions.
 
-This will edit the ssh_scan.sh file with the correct email address,
+This will perform the following operations :
+1. Setup the mail account from which to send the alerts
+2. Send a test email to this address
+3. Edit the ssh_scan.sh file with the correct email address of the recipient
+4. Install the dependencies (mawk and mailutils) if necessary.
+5. Create the directories in which to keep the alert logs and move the script in this directory
+6. Update the permissions to secure the script
+7. Add an entry in the crontab so the scripts gets executed every hour
 
-Install the dependencies (mawk and mailutils) if necessary.
+In the end the structure looks like the following
+/var/log/ssh-log/
+    ├── ssh.scan
+    ├── ssh.scan1569596461
+    ├── ssh.scan1569600061
+    ├── ssh.scan1569603661
+    └── ssh_scan.sh
 
-Create the log directory and move the files in the correct places.
-Change permissions to files so the program is secure.
-
-Add the script to the crontab so it gets executed every hour at xx:01.
