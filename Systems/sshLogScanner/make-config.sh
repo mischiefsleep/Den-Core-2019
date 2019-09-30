@@ -35,6 +35,10 @@ echo "A test email will be sent to $email.";
 echo "";
 echo "Your server for SSH Sentry has been correctly configured." | /bin/mail -s "SSH sentry configuration test" $email; 
 
+read -p "Who do you want to send the alerts to ? (provide an email address)" recipient;
+
+sed -i "s/EMAIL@ADDRESS.COM/$recipient/" $dir/ssh_scan.sh;
+
 if [ -f `which awk` ]
 then
     echo "Copying awk.";
