@@ -6,6 +6,6 @@ This folder is about tutorials for the Systems class.
 
 This program shows a basic usage of pointers in C.
 Compile it with the following command
-```C
+```bash
 gcc -g -Wall -O0 tutorial.c -o tutorial
 ```
