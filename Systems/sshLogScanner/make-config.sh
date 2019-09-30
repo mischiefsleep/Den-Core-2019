@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# Guilhem Mizrahi 09/2019
+
 dir=$( dirname "${BASH_SOURCE[0]}" );
 
 echo "Starting installation.";

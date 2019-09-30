@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# Guilhem Mizrahi 09/2019
+
 bin="/bin";
 log_file="/var/log/auth.log";
 alert_log="/var/log/ssh-log/ssh.scan";
