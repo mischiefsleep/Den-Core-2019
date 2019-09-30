@@ -1,5 +1,5 @@
 To configure the program, run the following command :
-sudo ./make-config.sh
+...sudo ./make-config.sh...
 And follow the instructions.
 
 This will perform the following operations :
