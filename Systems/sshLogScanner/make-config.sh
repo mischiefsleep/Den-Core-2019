@@ -12,7 +12,7 @@ then
     echo "awk is installed.";
 else
     echo "Installing awk.";
-    apt install awk;
+    apt install mawk;
 fi
 
 echo "";
