@@ -1,5 +1,5 @@
-To configure the program, run the following command :
-...sudo ./make-config.sh...
+To configure the program, run the following command :\
+sudo ./make-config.sh\
 And follow the instructions.
 
 This will perform the following operations :
@@ -11,11 +11,11 @@ This will perform the following operations :
 6. Update the permissions to secure the script
 7. Add an entry in the crontab so the scripts gets executed every hour
 
-In the end the structure looks like the following
-/var/log/ssh-log/
-    ├── ssh.scan
-    ├── ssh.scan1569596461
-    ├── ssh.scan1569600061
-    ├── ssh.scan1569603661
-    └── ssh_scan.sh
+In the end the structure looks like the following\
+/var/log/ssh-log/\
+    ├── ssh.scan\
+    ├── ssh.scan1569596461\
+    ├── ssh.scan1569600061\
+    ├── ssh.scan1569603661\
+    └── ssh_scan.sh\
 
