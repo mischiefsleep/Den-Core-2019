@@ -30,7 +30,7 @@ fi
 echo "Setting up the mail account from which to send emails";
 echo "If you have a gmail address, you may have to enable a security setting on your account to allow third party apps to access it.";
 echo "You can also create an application specific password if your provider allows it";
-read -p "Provide yout email address : " email;
+read -p "Provide your email address : " email;
 echo "";
 echo "Provide the password of your email account (the password is only accessible by root)"; 
 read -s password;
