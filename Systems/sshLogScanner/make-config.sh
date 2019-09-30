@@ -65,23 +65,23 @@ if [ ! -d /var/log/ssh-log ];
 then
     echo "Directory /var/log/ssh-log doesn't exist. Creating it.";
     mkdir /var/log/ssh-log;
-    chmod 700 /var/log/ssh-log;
+    chmod 744 /var/log/ssh-log;
     echo "";
     echo "Creating file /var/log/ssh-log/ssh.scan";
     touch /var/log/ssh-log/ssh.scan;
-    chmod 700 /var/log/ssh-log/ssh.scan;
+    chmod 744 /var/log/ssh-log/ssh.scan;
 else
     echo "Directory /var/log/ssh-log already exists. Updating permissions.";
-    chmod 700 /var/log/ssh-log;
+    chmod 744 /var/log/ssh-log;
     touch /var/log/ssh-log/ssh.scan;
-    chmod 700 /var/log/ssh-log/ssh.scan;
+    chmod 744 /var/log/ssh-log/ssh.scan;
 fi
 
 echo "";
 
 echo "Copying the script to /var/log/ssh-log.";
 cp "$dir/ssh_scan.sh" /var/log/ssh-log;
-chmod 700 /var/log/ssh-log/ssh_scan.sh;
+chmod 744 /var/log/ssh-log/ssh_scan.sh;
 echo "";
 
 echo "Putting the script in the crontab and set it to execute every hour.";
