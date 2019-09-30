@@ -34,7 +34,7 @@ echo "If you have a gmail address, you may have to enable a security setting on 
 echo "You can also create an application specific password if your provider allows it";
 read -p "Provide your email address : " email;
 echo "";
-echo "Provide the password of your email account (the password is only accessible by root)"; 
+echo "Provide the password of your email account (the password is only accessible by root) "; 
 read -s password;
 echo "";
 
@@ -57,9 +57,9 @@ sed -i "s/EMAIL@ADDRESS.COM/$email/" $dir/ssh_scan.sh;
 
 echo "A test email will be sent to $email.";
 echo "";
-echo "Your server for SSH Sentry has been correctly configured." | /bin/mail -s "SSH sentry configuration test" $email; 
+echo "Your server for SSH Sentry has been correctly configured." | /usr/bin/mail -s "SSH sentry configuration test" $email; 
 
-read -p "Who do you want to send the alerts to ? (provide an email address)" recipient;
+read -p "Who do you want to send the alerts to ? (provide an email address) " recipient;
 
 sed -i "s/EMAIL@ADDRESS.COM/$recipient/" $dir/ssh_scan.sh;
 
