@@ -7,10 +7,9 @@ dir=$( dirname "${BASH_SOURCE[0]}" );
 echo "Starting installation.";
 echo "";
 
-if [ -f `which awk` ]
+if [ -f "/bin/awk" ]
 then
-    echo "Copying awk.";
-    cp `which awk` /bin;
+    echo "awk is installed.";
 else
     echo "Installing awk.";
     apt install awk;
@@ -18,10 +17,9 @@ fi
 
 echo "";
 
-if [ -f `which mail` ]
+if [ -f "/bin/mail" ]
 then
-    echo "Copying mail.";
-    cp `which mail` /bin;
+    echo "mail is installed.";
 else
     echo "Installing mailutils.";
     apt install mailutils;
