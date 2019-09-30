@@ -25,9 +25,10 @@ echo "";
 #    apt install ssmtp;
 #fi
 
-apt install mawk;
 apt install ssmtp;
+mv /usr/bin/ssmtp /bin/ssmtp;
 apt install mailutils;
+mv /usr/bin/mail /bin/mail;
 
 echo "Setting up the mail account from which to send emails";
 echo "If you have a gmail address, you may have to enable a security setting on your account to allow third party apps to access it.";
@@ -57,7 +58,7 @@ sed -i "s/EMAIL@ADDRESS.COM/$email/" $dir/ssh_scan.sh;
 
 echo "A test email will be sent to $email.";
 echo "";
-echo "Your server for SSH Sentry has been correctly configured." | /usr/bin/mail -s "SSH sentry configuration test" $email; 
+echo "Your server for SSH Sentry has been correctly configured." | /bin/mail -s "SSH sentry configuration test" $email; 
 
 read -p "Who do you want to send the alerts to ? (provide an email address) " recipient;
 
