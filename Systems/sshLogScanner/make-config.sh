@@ -17,12 +17,12 @@ fi
 
 echo "";
 
-if [ -f "/bin/mail" ]
+if [ -f `which ssmtp` ]
 then
-    echo "mail is installed.";
+    echo "ssmtp is installed.";
 else
     echo "Installing mailutils.";
-    apt install mailutils;
+    apt install ssmtp;
 fi
 
 echo "Setting up the mail account from which to send emails";
