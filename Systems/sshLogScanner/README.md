@@ -20,3 +20,7 @@ In the end the structure looks like the following\
 &nbsp;&nbsp;&nbsp;&nbsp;└── ssh_scan.sh\
 
 Where ssh_scan.sh is the script, ssh.scan is the current log of failures (the ones that occured during the last hour) and the ssh.scan1569.... are archives of the logs when an alert was sent, the number being the time of the beginning of said hour in seconds.
+
+If you have a google account there are some recommended security steps to complete before configuring the application :
+1. Allow two factors authentication (this will log you out of your accounts) [here](https://myaccount.google.com/security)
+2. Generate a password specific for this application and this device so that if your machine is compromised your account is not completely lost
