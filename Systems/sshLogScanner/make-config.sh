@@ -58,7 +58,7 @@ sed -i "s/EMAIL@ADDRESS.COM/$email/" $dir/ssh_scan.sh;
 
 echo "A test email will be sent to $email.";
 echo "";
-echo "Your server for SSH Sentry has been correctly configured." | /bin/mail -s "SSH sentry configuration test" $email; 
+echo "Subject: alert!\nYour server for SSH Sentry has been correctly configured." | ssmtp $email; 
 
 read -p "Who do you want to send the alerts to ? (provide an email address) " recipient;
 
