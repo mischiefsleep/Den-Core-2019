@@ -54,8 +54,6 @@ echo "mailhub=$server" >> /etc/ssmtp/ssmtp.conf;
 echo "" >> /etc/ssmtp/ssmtp.conf;
 echo "UseSTARTTLS=YES" >> /etc/ssmtp/ssmtp.conf;
 
-sed -i "s/EMAIL@ADDRESS.COM/$email/" $dir/ssh_scan.sh;
-
 echo "A test email will be sent to $email.";
 echo "";
 echo "Your server for SSH Sentry has been correctly configured." | mail -s "Test configuration" $email; 
