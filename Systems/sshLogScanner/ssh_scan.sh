@@ -92,7 +92,7 @@ function trigger_alert(){
 	email=$3;	
 	count=$(/usr/bin/wc -l < $alert_log);
 	echo "[$count] lines in the log file";
-	if [ $(/usr/bin/wc -l < $alert_log) -gt "$threshold" ]
+	if [ $(/usr/bin/wc -l < $alert_log) -gt "$threshold + 1" ]
 	then
     		/bin/mail -s "SSH alert" $email <<< "There were [$count] failed attempts to connect to [$HOSTNAME] detected on [$(/bin/date +"%T")]";
 		if [ "$?" -eq 0 ] # Check if the mail command worked
