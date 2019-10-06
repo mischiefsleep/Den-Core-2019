@@ -2,12 +2,6 @@
 
 # Guilhem Mizrahi 09/2019
 
-log_file=0;
-alert_log=0;
-email=0;
-threshold=0;
-period=0;
-
 function arg_parser(){
 	echo "number of arguments [$#]";
 	if [ "$#" -eq 5 ]
