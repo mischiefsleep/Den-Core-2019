@@ -84,8 +84,6 @@ function log_parser(){
 	fi
 }
 
-# TO DO : It would be useful to be able to make the filter function (inside the awk command line 45) into a standalone function. Right now it is a regex /ailed|ailure/ that can match pretty well the SSH log file but to make this program usable for a different log file it would need some engineering.
-
 function trigger_alert(){
 	alert_log=$1;
 	threshold=$2;
@@ -109,7 +107,3 @@ function trigger_alert(){
 		return 0;
 	fi
 }
-
-arg_parser "$@";
-log_parser "$1" "$2" "$5";
-trigger_alert "$2" "$4" "$3";
