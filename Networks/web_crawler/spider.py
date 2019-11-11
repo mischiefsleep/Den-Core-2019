@@ -1,7 +1,6 @@
 #!/usr/bin/python
 
-# Guilhem Mizrahi
-# 11/2019
+# Guilhem Mizrahi 11/2019
 
 # Imports
 
