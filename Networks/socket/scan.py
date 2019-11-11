@@ -1,7 +1,6 @@
 #!/usr/bin/python3
 
-# Guilhem Mizrahi
-# 09/2019
+# Guilhem Mizrahi 09/2019
 
 # This program takes a hostname (IPv4 address of hostname such as localhost etc...) and will scan the ports on this host
 # A better port scanner would use connect_ex because it doesn't require

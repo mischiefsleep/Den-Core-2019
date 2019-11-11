@@ -1,7 +1,6 @@
 #!/usr/bin/python3
 
-# Guilhem Mizrahi
-# 09/2019
+# Guilhem Mizrahi 09/2019
 # this program opens a specific port
 
 import socket
