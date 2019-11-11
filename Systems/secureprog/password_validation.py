@@ -1,5 +1,7 @@
 #!/usr/bin/python3
 
+# Guilhem Mizrahi 09/2019
+
 allowed="azertyuiopqsdfghjklmwxcvbn"
 not_allowed="@#&é\"'(§è!çà)°-_^¨$*€ù%`£,?;.:/=+<>¿·\\±"
 

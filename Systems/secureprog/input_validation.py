@@ -1,5 +1,7 @@
 #!/usr/bin/python3
 
+# Guilhem Mizrahi 09/2019
+
 def first():
     var1=input("Enter the first number: ")
     var2=input("Enter the second number: ")
