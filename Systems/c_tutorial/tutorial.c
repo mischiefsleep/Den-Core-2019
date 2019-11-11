@@ -1,5 +1,7 @@
 #include<stdio.h>
 
+// Guilhem Mizrahi 10/2019
+
 int main(){  
     
     printf("########### basic pointers #############\n");
